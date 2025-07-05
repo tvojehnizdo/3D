@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Vizualizace Domu – Konfigurátor</title>
+  <style>
+    body { margin: 0; font-family: Arial; }
+    #controls { padding: 1rem; background: #f5f5f5; display: flex; gap: 1rem; align-items: center; }
+    #canvas-container { width: 100vw; height: 90vh; display: block; }
+    label { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label for="roofColor">Barva střechy:</label>
+    <select id="roofColor">
+      <option value="#8B0000">Tmavě červená</option>
+      <option value="#333333">Antracit</option>
+      <option value="#4B5320">Zelená</option>
+    </select>
+
+    <label for="houseType">Typ domu:</label>
+    <select id="houseType">
+      <option value="model1.glb">2+kk</option>
+      <option value="model2.glb">3+kk</option>
+      <option value="model3.glb">4+kk</option>
+    </select>
+  </div>
+
+  <div id="canvas-container"></div>
+
+  <script type="module" src="./js/viewer.js"></script>
+</body>
+</html>
